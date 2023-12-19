@@ -1,24 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import PurchaseList from "./components/AllOrders";
+import PieChart from "./components/Analytics";
+import Dashboard from "./components/Dashboard";
+import Navbar from "./components/Navbar";
+import OrdersList from "./components/Orders";
+import Sidebar from "./components/Sidebar";
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div>
+        <Navbar />
+        
+        <Routes>
+          <Route path="/" element={<Dashboard/>}></Route>
+          <Route path="/orders" element={<PurchaseList/>}></Route>
+          <Route path="/analytics" element={<PieChart/>}></Route>
+
+        </Routes>
+      </div>
+    </Router>
   );
 }
 

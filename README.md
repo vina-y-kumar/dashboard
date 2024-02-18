@@ -1,4 +1,6 @@
-# Getting Started with Create React App
+# Dashboard using React Js
+![image](https://github.com/vina-y-kumar/dashboard/assets/92167129/3eabe7b9-9bcf-456b-aabf-18c8f315e614)
+
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
